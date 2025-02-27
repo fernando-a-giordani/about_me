@@ -12,7 +12,9 @@
     <body>
         <main style="display: flex; justify-content: center; align-items: center; height: 100vh;">
             <div style="text-align: center;">
-                <h1 id="initial-msg" style="margin: 25px">Escolha seu idioma</h1>
+                <h1 id="language" style="margin: 25px">Escolha seu idioma</h1>
+
+                <h1 id="web-option" style="margin: 25px">Web</h1>
                 <button id="cv_br"
                         onmouseover="mudarTexto('Escolha seu idioma')"
                         onmouseout="mudarTexto('Escolha seu idioma')"
@@ -25,13 +27,27 @@
                         onclick="window.location.href='cv_en.html'">
                     <img src="assets/united-states.png" title="English" width="60px">
                 </button>
+
+                <h1 id="pdf-option" style="margin: 25px">PDF</h1>
+                <button id="cv_br"
+                        onmouseover="mudarTexto('Escolha seu idioma')"
+                        onmouseout="mudarTexto('Escolha seu idioma')"
+                        onclick="window.location.href='CV_BR - Fernando Augusto Giordani.pdf'">
+                    <img src="assets/brazil.png" title="Português" width="60px">
+                </button>
+                <button id="cv_en"
+                        onmouseover="mudarTexto('Choose your language')"
+                        onmouseout="mudarTexto('Choose your language')"
+                        onclick="window.location.href='CV_EN - Fernando Augusto Giordani.pdf'">
+                    <img src="assets/united-states.png" title="English" width="60px">
+                </button>
             </div>
         </main>
     </body>
 
     <script>
         function mudarTexto(texto) {
-            document.getElementById("initial-msg").innerText = texto;
+            document.getElementById("language").innerText = texto;
         }
     </script>
 
